@@ -1,1 +1,35 @@
+Exercise 1: CURD Operation
 
+# Create
+data = []  
+
+# Add items
+data.append("Hexaware")
+data.append("Training")
+print("After Adding:", data)
+
+# Read
+print("Current Data:", data)
+
+# Update
+data[0] = "Mavericks" 
+print("After Updating:", data)
+
+# Delete
+del data[1]  
+print("After Deleting:", data)
+
+
+
+Exercise 2: Linear Search
+
+def lin_search(ar,match):
+  for i in range(len(ar)):
+    if ar[i] == match:
+      return i
+  return -1
+ 
+ar = list(map(int,input().split()))
+match = int(input())
+ 
+print(lin_search(ar,match))
